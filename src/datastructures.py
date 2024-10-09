@@ -8,8 +8,6 @@ update this file to implement the following already declared methods:
 """
 from random import randint
 
-# src/datastructure.py
-
 class FamilyStructure:
     def __init__(self, last_name):
         self.last_name = last_name

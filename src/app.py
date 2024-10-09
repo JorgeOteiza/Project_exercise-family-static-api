@@ -1,12 +1,10 @@
 """
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
-import os
-from flask import Flask, request, jsonify, url_for
+from flask import Flask, request, jsonify
 from flask_cors import CORS
-from utils import APIException, generate_sitemap
 from datastructures import FamilyStructure
-#from models import Person
+from utils import APIException, generate_sitemap
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
